@@ -1,1 +1,51 @@
-/ 100
+25/ 100
+Last update Mon May 18 16:51:07 2015 -0700
+
+-----------------------------------------------------
+[1]  Input redirection from an existant file (25)
+celik$ this is correct
+this is not
+celik$ 
+-----------------------------------------------------
+[2]  Output redirection (>) to an non-existant file (15)
+  -15: Does not work!
+celik$ output_redirected > tmp.txt
+celik$ 
+-----------------------------------------------------
+[3]  Output append (>>) to an existing file (10)
+  -10: Does not work!
+celik$ appended >> /home/csgrads/celikkae/TA/hw2/append.txt
+celik$ initial
+celik$ 
+-----------------------------------------------------
+[4]  Command with one pipe (15)
+  -15: Does not work!
+celik$ this is correct
+this is not
+celik$ 
+-----------------------------------------------------
+[5]  Command with more than one pipe (15)
+  -15: Does not work!
+celik$ this is correct
+this is not
+celik$.*|.\+| test missing
+
+-----------------------------------------------------
+[6]  Input redirection with piping (5)
+  -5: Does not work!
+celik$ this is correct
+this is not
+celik$ 
+-----------------------------------------------------
+[7]  Output redirection and piping (5)
+  -5: Does not work!
+celik$ this is correct
+this is not
+celik$.*|.\+> test missing
+
+-----------------------------------------------------
+[8]  Input redirection, output redirection, and piping (10)
+  -10: Does not work!
+celik$ this is correct
+this is not
+celik$.*<.\+|.\+> test missing
