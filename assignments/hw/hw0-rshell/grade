@@ -1,10 +1,10 @@
-0/ 100
+75 / 100
 
 executable should be named rshell and it should be in bin folder.
 
 -100: test file (exec.script) is empty
   -10: compilation gives warnings (-5 for each warning, see compile output)
-  
+
 Extra credit: /10
   [ /10]all of prompts have the user information
 
@@ -22,14 +22,14 @@ Part 2: /35 (5pt extra)
 they must show both the case where the first command succeeds and the
 case where the first command fails.
   [ /5] example showing lots of commands chained together
-  [ /10]two examples mixing and matching different operators in one command 
+  [ /10]two examples mixing and matching different operators in one command
   [ /5] parsing example showing that the operators can be right next to each
 command or they can have spaces separating them; e.g. `ls -l||cat
   ; rm -rf *`
 
 Part 3: /20
   [ /5]exit all by itself
-  [ /5]exit with parameters passed to it 
+  [ /5]exit with parameters passed to it
   [ /5]exit as a parameter to something else shouldn't exit, e.g. `ls -l exit`
   [ /5] exit in a chain of commands should exit, e.g. `ls -l; exit`
 
@@ -37,5 +37,5 @@ Part 4: /20
   [ /10]comment within a command: `ls -l # this is a comment`
   [ /5]comment on a line by itself
   [ /5]comment where `#` touches something else: `ls -l# this is a comment
-  here` 
+  here`
 
